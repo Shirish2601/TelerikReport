@@ -1,0 +1,11 @@
+﻿@page "/product-report"
+@using Telerik.ReportViewer.Blazor
+
+<ReportViewer ViewerId="rv1"
+              ReportSource="@(new ReportSourceOptions() 
+                                { Report = "ProductInformation.trdp", 
+                                    Parameters = new Dictionary<string, object>() { 
+                                        {"ApiUrl", "http://localhost:5146/api/Product/products/1"} }
+                                })"
+              ScaleMode="@(ScaleMode.Specific)"
+              Scale="1.0"/>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telerik.DataAccess.Core" Version="2018.0.1127.1" />
+    <PackageReference Include="Telerik.Drawing.Skia" Version="18.1.24.514" />
+    <PackageReference Include="Telerik.FontIcons" Version="3.0.0" />
+    <PackageReference Include="Telerik.Reporting" Version="18.1.24.514" />
+    <PackageReference Include="Telerik.Reporting.OpenXmlRendering" Version="17.2.23.1114" />
+    <PackageReference Include="Telerik.Reporting.Services.AspNetCore" Version="18.1.24.514" />
+    <PackageReference Include="Telerik.Reporting.WebServiceDataSource" Version="18.1.24.514" />
+    <PackageReference Include="Telerik.ReportViewer.Blazor" Version="18.1.24.514" />
+    <PackageReference Include="Telerik.SvgIcons" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

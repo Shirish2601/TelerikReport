@@ -27,3 +27,12 @@ h1:focus {
 .darker-border-checkbox.form-check-input {
     border-color: #929292;
 }
+
+
+#rv1 {
+    position: absolute;
+    width: 88.6%;
+    height: 92.5%;
+    margin-top: -25px;
+    margin-left: -20px;
+}

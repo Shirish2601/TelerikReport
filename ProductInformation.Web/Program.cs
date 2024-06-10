@@ -1,3 +1,4 @@
+using MudBlazor.Services;
 using ProductInformation.Web.Components;
 
 namespace ProductInformation.Web
@@ -11,6 +12,9 @@ namespace ProductInformation.Web
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
+            builder.Services.AddCors();
+
+            builder.Services.AddMudServices();
 
             var app = builder.Build();
 
@@ -19,6 +23,7 @@ namespace ProductInformation.Web
             {
                 app.UseExceptionHandler("/Error");
             }
+
 
             app.UseStaticFiles();
             app.UseAntiforgery();

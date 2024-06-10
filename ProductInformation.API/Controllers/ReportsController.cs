@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
 
 
     [ApiController]
-    [EnableCors("CorsPolicy")]
+    [EnableCors("AllowOrigin")]
     [Route("api/reports")]
     [ApiExplorerSettings(IgnoreApi = true)]
     public class ReportsController : ReportsControllerBase

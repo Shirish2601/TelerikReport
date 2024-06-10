@@ -1,0 +1,32 @@
+﻿@page "/product-report"
+
+
+@using Microsoft.AspNetCore.Mvc.Rendering
+@using Telerik.ReportViewer.Blazor
+
+<ReportViewer ViewerId="rv1"
+    ServiceUrl="http://localhost:5146/api/reports"
+              ReportSource="@(new ReportSourceOptions() 
+                                { Report = "ProductInformation.trdp", 
+                                    Parameters = new Dictionary<string, object>() { 
+                                        {"ApiUrl", "http://localhost:5146/api/Product/products"},
+                                        {"ProductId", 10}
+                                }
+                                })"
+
+              Scale="1.0"/>
+
+
+              <div>
+                  Hello World
+              </div>
+
+<style>
+    #rv1 {
+        position: absolute;
+        width: 88.6%;
+        height: 92.5%;
+        margin-top: -25px;
+        margin-left: -20px;
+    }
+</style>

@@ -22,7 +22,7 @@ namespace ProductInformation.API
             }
 
             app.UseRouting();
-            app.UseCors();
+            app.UseCors("AllowOrigin");
 
             app.UseEndpoints(endpoints =>
             {
@@ -37,6 +37,10 @@ namespace ProductInformation.API
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
             services.AddTransient<ProductRepository>();
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
             services.AddControllers()
                 .AddNewtonsoftJson();
 

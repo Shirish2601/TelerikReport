@@ -1,12 +1,9 @@
 ﻿using Microsoft.AspNetCore.Cors;
-
+using Microsoft.AspNetCore.Mvc;
+using Telerik.Reporting.Services;
+using Telerik.Reporting.Services.AspNetCore;
 namespace WebApplication1.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using Telerik.Reporting.Services;
-    using Telerik.Reporting.Services.AspNetCore;
-
-
     [ApiController]
     [EnableCors("AllowOrigin")]
     [Route("api/reports")]
